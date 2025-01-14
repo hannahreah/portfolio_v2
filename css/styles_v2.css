@@ -1,0 +1,409 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    list-style: none;
+    left:0;
+}
+
+.nowrap {
+      white-space: nowrap;
+}
+    
+.offscreen {
+      position: absolute;
+      left: -10000px;
+}
+    
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif, sans-serif;
+    background-color: rgb(244, 241, 237);
+
+}
+
+header li {
+    list-style: none;
+}
+
+
+footer{
+        text-align:left;
+        bottom: 0;
+        left: 2;
+        width: 100%;
+        padding: 1rem; 
+        position: fixed;
+        font-size: smaller;
+        color: whitesmoke;
+        margin-left: 2rem;
+}
+
+nav a{
+    font-size: 1rem;
+    color: whitesmoke;
+    font-weight:bold;
+    margin: 0 20px;
+    border-bottom: 3px dashed transparent;
+    transition: 0.3s ease-in;
+
+}
+
+nav ul li a.active {
+    background-color: hsla(0, 56%, 87%, 0.403);
+    color: white;
+  }
+
+a:hover {
+    text-decoration: underline;
+}
+
+
+
+h2 {
+    color: #333;
+}
+
+.mainContainer {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+.container {
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    display:inline;
+    align-items: center;
+    height:fit-content;
+    overflow:hidden;
+    position:relative;
+    margin-left: auto;
+    margin-right: 0;
+    justify-content: center; 
+    height: 100%;
+
+}
+
+.container2 {
+    font-size: 150%;
+    color: aliceblue;
+    text-shadow: 2px 2px 5px #000;
+    background-color: hsla(0, 0%, 0%, 0.403);
+    border-radius: 10px; 
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding:1rem;
+
+  }
+
+.container2 h2 {
+    color: aliceblue;
+}
+
+.contactBtn {
+    text-shadow: 2px 2px 5px #111111;
+    border-radius: 10px; 
+    text-align: right;
+    top: 0;
+    left: 0;
+    padding: 2% 5%; 
+    position: fixed;
+    align-items: flex-end;
+    right: 0; 
+    margin-right: 50px; 
+    font-size: 1.5rem;
+    color: #333;
+    vertical-align: middle;
+    align-self: center;
+}
+
+.image-container {
+  display: inline-block;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out;
+}
+
+img {
+  transition: transform 0.3s ease-in-out; 
+  cursor: pointer;
+}
+
+
+.image-container:hover img{
+  transform: scale(1.1); 
+}
+
+.image-container:hover li{
+  transform: scale(1.1); 
+}
+
+.left-pane {
+    width: 20%;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 0;
+  }
+  
+
+  .left-pane h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .left-pane ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .left-pane ul li {
+    margin-bottom: 1rem;
+  }
+  
+  .left-pane ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+  
+  .left-pane ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .right-pane {
+    width: 75%;
+    overflow-y: auto;
+    padding: 2rem;
+    background-color: #f4f4f4;
+  }
+  
+  .right-pane section {
+    margin-bottom: 2rem;
+  }
+  
+  .right-pane section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .right-pane section p {
+    font-size: 1.5rem;
+    line-height: 1.6;
+  }
+  
+.radius {
+    border-radius: 0px; 
+
+}
+
+.aboutme {
+    padding: 20px;
+    padding-top: 50px;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+    background-color: hsla(0, 0%, 100%, 0.35);
+
+}
+
+.about-det{
+    font-style: italic;
+    font-weight: lighter;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-bottom: 20px;    
+}
+
+
+.about-contents {
+    margin: 2rem;
+    font-size: 150%;
+}
+
+.typing-container {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+
+  }
+
+.highlight {
+        color:rgba(104, 25, 25, 0.904);
+  }
+
+.cursor {
+    display: inline-block;
+    background-color: #333;
+    width: 2px;
+    height: 1em;
+    animation: blink 0.7s steps(2, start) infinite;
+    vertical-align: bottom;
+  }
+@keyframes blink {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+
+.profile-pic-figure {
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.profile-pic-figure img {
+    width: 80%;
+    height: auto;
+    min-width: 50px;
+    border: 5px double gray;
+    border-style:ridge;
+    border-radius: 50%;
+    
+
+}
+
+.menu {
+    margin:10px;
+    display:flex;
+}
+
+.menu img {
+    width: 50px;
+    height: 50px;
+    min-width: 30px;
+    height: auto;
+    padding: .3rem;
+    border-style: none;
+    border-radius: 50%;
+    vertical-align: middle;
+
+}
+
+.logo {
+    display: flex;
+    margin:20px;
+    padding-bottom: 12vh;
+}
+
+
+.logo img {
+    width: 70px;
+    height: 70px;
+    min-width: 50px;
+    height: auto;
+    padding: .3rem;
+    border-style: none;
+    border-radius: 50%;
+
+}
+
+.project {
+    margin-bottom: 20px;
+    text-align: center;
+    align-items: center;
+    display:grid;
+    justify-content: center;
+    background-color: hsla(0, 0%, 100%, 0.35);
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+
+.project h3 {
+    margin: 0;
+}
+
+.project a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.project a:hover {
+    text-decoration: underline;
+}
+
+.project img {
+    width: 400px;
+    height: 400px;
+    min-width: 100px;
+    border: 5px double gray;
+    border-style: groove;
+    height: auto;
+}
+
+.contact{
+    display: flexgrid;
+    text-align: center;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    font-size: 2rem; 
+    padding-bottom: 100px;
+
+}
+
+.contact h2{
+    padding-bottom: 50px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 24px;
+
+
+}
+
+form input, form textarea {
+    margin: 10px 0;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    padding: 15px;
+    background: #1a1a1a;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background: #333;
+}
+
+@media (max-width: 768px) {
+    .mainContainer {
+      flex-direction: column;
+    }
+  
+    .left-pane {
+      width: 100%;
+      text-align: center;
+    }
+  
+    .right-pane {
+      width: 100%;
+    }
+  }
+
+  .errorMessages{
+    color: red; 
+    display: none;
+    font-size: 50%;
+  }

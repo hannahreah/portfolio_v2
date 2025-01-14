@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hannah Hernandez">
+    <meta name="description" content="My Portfolio">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="./css/styles_v2.css">
+    <link rel="icon" href="./img/shortcut_icon.png" type="image/x-icon">
+</head>
+<body>z
+    <div class="mainContainer">
+        <header class="left-pane">
+            <figure class="profile-pic-figure">
+                <img src="./img/prof_pic.png" alt="Profile Picture" title="My Profile Picture" width="200" height="200">
+            </figure>
+            <nav class="menu">
+                <ul>
+                    <div class="image-container"><li><a href="#about"><img src="./img/about_logo.png">ABOUT</a></li></div>
+                    <div class="image-container"><li><a href="#projects"><img src="./img/projects_logo.png">PROJECTS</a></li></div>
+                    <div class="image-container"><li><a href="#contact"><img src="./img/contact_logo.png">CONTACT</a></li></div>
+                </ul>
+                
+            </nav>
+
+            <div class="logo">
+                <div class="image-container"><a href="https://www.linkedin.com/in/hreahernandez/" target="_blank"><img src="./img/linkedin_logo.png" alt="linkedin"></a></div>
+                <div class="image-container"><a href="https://www.facebook.com/hreahernandez" target="_blank"><img src="./img/fb_logo.png" alt="facebook"></a></div>
+                <div class="image-container"><a href="https://www.github.com" target="_blank"><img src="./img/github_logo.png" alt="github"></a></div>
+            </div>
+        </header>
+
+        <div class="right-pane">
+           <div class="contactBtn">
+             <a href="#contactMe">CONTACT ME</a>
+           </div>
+            <div class="container">
+                <section class="aboutme"  id="about">
+                
+                    <h1> <span class="container2">ABOUT ME </span> 
+                        <div class="about-contents typing-container" >   
+                            <div id="textParts" style="display: none;">
+                                Hey I'm <span class="highlight">HANNAH REA HERNANDEZ</span>
+                            </div>
+                            <span id="typingText"></span>
+                            <span class="cursor"></span>
+                        </div>
+
+                        <div class="about-contents"> 
+                            <p>Fullstack Web Developer</p>
+
+                            <p class="about-det">Welcome to my portfolio where you can see some of my projects. 
+                                I am passionate about coding and continuously learning new technologies. </p>
+                        </div>
+                    </h1>        
+                </section>
+            
+            </div>
+            <div class="container">
+                    <div class="project" >
+                        <section class="container2"  id="projects">
+                            <h1>MY PROJECTS</h1>
+                            <div  >
+                                <img src="./img/under_cons.png"></a>
+                                <p>This page is under construction.</p>
+                                <a href="#">View Project</a>
+                            </div>
+                            
+                        </section>
+                    </div>
+                </div>
+
+                <div class="container2 radius" id="contactMe">
+                    <section class="contact" id="contact">    
+                        <h2>CONTACT ME</h2> 
+                        <form id="contact-form">
+                            <input type="text" placeholder="Your Name" required id="fullname">
+                            <input type="email" placeholder="Your Email" required id="email">
+                            <textarea placeholder="Your Message" required id="message"></textarea>
+                            <button type="submit" id="submitBtn">Send Message</button>
+                            <p id="errorMessage" class="errorMessages">Name or Message cannot be empty!</p>
+
+
+                        </form>
+                    </section>
+                </div>
+
+            <br />  <br />  <br />
+            
+        </div>
+        <footer>
+            <p>&copy; 2024 / Hannah Hernandez</p>
+            <p>All Rights Reserved</p>
+
+        </footer>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
