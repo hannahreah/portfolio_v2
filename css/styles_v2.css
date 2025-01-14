@@ -404,7 +404,6 @@ form button:hover {
   }
 
   .errorMessages{
-    color: red; 
     display: none;
     font-size: 50%;
   }
