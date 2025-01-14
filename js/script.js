@@ -110,12 +110,15 @@ form.addEventListener('submit', function(event) {
 
   if (nameValue === "" || messageValue === "" ) {
     event.preventDefault(); 
+    errorMessage.style.color = "hsla(14, 98%, 50%, 0.996)"
     errorMessage.style.display = "block"; 
+    errorMessage.innerHTML = `Name or Message cannot be empty!`;
+
   } else {
-    errorMessage.style.display = "none"; 
-    console.log(`Form submitted with name: ${nameValue}`);
-    alert(`Thank you for reaching out, ${nameValue}! Your form was submitted.`);
+    errorMessage.style.color = "hsla(133, 98%, 48%, 0.965)";
+    errorMessage.style.display = "block"; 
+    errorMessage.innerHTML = `Thank you for reaching out, ${nameValue}! Your form was submitted.`;
+    
   }
   form.reset();
-
 });
