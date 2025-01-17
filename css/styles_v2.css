@@ -62,30 +62,33 @@ a:hover {
 }
 
 
-
 h2 {
-    color: #333;
+    color: #111111;
 }
 
 .mainContainer {
     display: flex;
-    height: 100vh;
     overflow: hidden;
+    width: fit-content;
+    height: 100vh;
+
+  }
+
+.fullScreenContainer {
+  height: 100vh;
   }
 
 .container {
     padding-top: 20vh;
     padding-bottom: 20vh;
     display:inline;
-    align-items: center;
-    height:fit-content;
+   /* align-items: center;
+    height:fit-content;*/
     overflow:hidden;
     position:relative;
     margin-left: auto;
     margin-right: 0;
-    justify-content: center; 
-    height: 100%;
-
+    /*justify-content: center; */
 }
 
 .container2 {
@@ -97,7 +100,6 @@ h2 {
     padding-left: 1rem;
     padding-right: 1rem;
     padding:1rem;
-
   }
 
 .container2 h2 {
