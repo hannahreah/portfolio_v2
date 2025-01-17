@@ -86,7 +86,7 @@ const observer = new IntersectionObserver((entries) => {
 sections.forEach(section => observer.observe(section));
 updateActiveLink();
 
-//Scale the image 
+//Scale the image/text on mouseover
 const imageContainer = document.querySelector(".image-container");
 imageContainer.addEventListener("mouseover", () => {
       imageContainer.style.transform = "scale(1.1)"; 
